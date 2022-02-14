@@ -7,9 +7,10 @@ const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
             {toDoList.map(todo => {
                 return (
                     <ToDo todo={todo} handleToggle={handleToggle} handleFilter={handleFilter}/>
+                    // console.log(todo);
                 )
             })}
-            <button style={{margin: '20px'}} onClick={handleFilter}>Clear Completed</button>
+            <button type="button" className="btn btn-dark" style={{margin: '10px 0px 10px -5px'}} onClick={handleFilter}>Clear Completed Tasks</button>
         </div>
     );
 };
